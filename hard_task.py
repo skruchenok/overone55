@@ -9,7 +9,3 @@ def comp(num1, num2):
     else:
         raise ValueError("Некоректные числа для сравнения")
 
-try:
-    print(comp(-9.9,-1.9))
-except ValueError as e:
-    print(e)
