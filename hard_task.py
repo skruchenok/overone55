@@ -9,3 +9,8 @@ def comp(num1, num2):
     else:
         raise ValueError("Некоректные числа для сравнения")
 
+def edit(num, day, k):
+    while day:
+        num *= k
+        day -= 1
+    return num
