@@ -9,8 +9,15 @@ def comp(num1, num2):
     else:
         raise ValueError("Некоректные числа для сравнения")
 
+
 def edit(num, day, k):
-    while day:
-        num *= k
-        day -= 1
+    if (type(num) == int or type(num) == float) and type(day) == int:
+        while day:
+            num *= k
+            day -= 1
+    else:
+        raise ValueError("Введены некорректные числа")
     return num
+
+
+# print(edit(1, 30, 2))
