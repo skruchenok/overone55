@@ -20,4 +20,7 @@ def edit(num, day, k):
     return num
 
 
-# print(edit(1, 30, 2))
+# try:
+#     print(edit('1', 30, 2))
+# except ValueError as e:
+#     print(e)
